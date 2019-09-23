@@ -7,27 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		848D7F742335FAB500BEE34F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F682335FAB500BEE34F /* ViewController.swift */; };
+		74371F4819C191F441524D18 /* Pods_car4uTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41410776D735EFC95AE8866 /* Pods_car4uTests.framework */; };
+		848D7F742335FAB500BEE34F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F682335FAB500BEE34F /* MapViewController.swift */; };
 		848D7F752335FAB500BEE34F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D7F6B2335FAB500BEE34F /* LaunchScreen.storyboard */; };
 		848D7F762335FAB500BEE34F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D7F6C2335FAB500BEE34F /* Main.storyboard */; };
-		848D7F772335FAB500BEE34F /* car4u.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F6E2335FAB500BEE34F /* car4u.xcdatamodeld */; };
 		848D7F782335FAB500BEE34F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848D7F702335FAB500BEE34F /* Assets.xcassets */; };
 		848D7F792335FAB500BEE34F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F722335FAB500BEE34F /* AppDelegate.swift */; };
-		848D7F7A2335FAB500BEE34F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848D7F732335FAB500BEE34F /* Info.plist */; };
+		848D7F7C2336010800BEE34F /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F7B2336010800BEE34F /* LocationProvider.swift */; };
+		848D7F7F2336043600BEE34F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F7E2336043600BEE34F /* Api.swift */; };
+		848D7F812336051800BEE34F /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F802336051800BEE34F /* ApiManager.swift */; };
+		848D7F832336072700BEE34F /* ApiManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F822336072700BEE34F /* ApiManager+Rx.swift */; };
+		848D7F8523360C0700BEE34F /* Placemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F8423360C0700BEE34F /* Placemark.swift */; };
+		848D7F8823360EA500BEE34F /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F8723360EA500BEE34F /* Dictionary+Extensions.swift */; };
+		848D7F8A2336129C00BEE34F /* PlacemarkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F892336129C00BEE34F /* PlacemarkServices.swift */; };
+		848D7F8D2336233900BEE34F /* PlacemarksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F8C2336233900BEE34F /* PlacemarksViewModel.swift */; };
+		848D7F8F2336291700BEE34F /* ObservableType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F8E2336291700BEE34F /* ObservableType+Extensions.swift */; };
+		848D7F912336552900BEE34F /* AnnotationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F902336552900BEE34F /* AnnotationViewModel.swift */; };
+		848D7F94233665A700BEE34F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F93233665A700BEE34F /* UIColor+Extensions.swift */; };
+		848D7F96233666FF00BEE34F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F95233666FF00BEE34F /* UIView+Extensions.swift */; };
+		848D7F982336678A00BEE34F /* UIView+StateIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F972336678A00BEE34F /* UIView+StateIndicator.swift */; };
+		848D7F9A233667DB00BEE34F /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F99233667DB00BEE34F /* UIView+AutoLayout.swift */; };
+		848D7F9D23366B1F00BEE34F /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F9C23366B1F00BEE34F /* AnnotationView.swift */; };
+		848D7FA12336826E00BEE34F /* PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F9F2336826E00BEE34F /* PulleyViewController.swift */; };
+		848D7FA22336826E00BEE34F /* PulleyPassthroughScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FA02336826E00BEE34F /* PulleyPassthroughScrollView.swift */; };
+		848D7FA62336895800BEE34F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FA52336895800BEE34F /* ListViewController.swift */; };
+		848D7FA823368ACF00BEE34F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FA723368ACF00BEE34F /* UIViewController+Extensions.swift */; };
+		848D7FAA23368EEF00BEE34F /* CarInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FA923368EEF00BEE34F /* CarInfoViewModel.swift */; };
+		848D7FAD233698AC00BEE34F /* CarInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FAB233698AC00BEE34F /* CarInfoCell.swift */; };
+		848D7FAE233698AC00BEE34F /* CarInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848D7FAC233698AC00BEE34F /* CarInfoCell.xib */; };
+		848D7FB22336CC2500BEE34F /* car4u.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FB02336CC2500BEE34F /* car4u.xcdatamodeld */; };
+		848D7FB42336CC5100BEE34F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FB32336CC5100BEE34F /* DataController.swift */; };
+		848D7FB82337EE3000BEE34F /* DataController+Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FB72337EE3000BEE34F /* DataController+Insert.swift */; };
+		848D7FC52338B59400BEE34F /* DataController+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FC42338B59400BEE34F /* DataController+Fetch.swift */; };
+		848D7FC72338BF5200BEE34F /* UIControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FC62338BF5200BEE34F /* UIControl+Extensions.swift */; };
+		848D7FFA2338C9EC00BEE34F /* MapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FF92338C9EC00BEE34F /* MapViewControllerTests.swift */; };
+		848D7FFE2338D41C00BEE34F /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 848D7FFD2338D41B00BEE34F /* locations.json */; };
+		848D80022338DBA400BEE34F /* MockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D80012338DBA400BEE34F /* MockViewModel.swift */; };
 		89CB766BE85B4D782B3FF96D /* Pods_car4u.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF13842681121CAE062FE99 /* Pods_car4u.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		848D7FEF2338C7A300BEE34F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 848D7F432335F55800BEE34F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 848D7F4A2335F55800BEE34F;
+			remoteInfo = car4u;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1677C46D592004C2D4F55B97 /* Pods-car4u.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-car4u.debug.xcconfig"; path = "Target Support Files/Pods-car4u/Pods-car4u.debug.xcconfig"; sourceTree = "<group>"; };
 		587ED69B661C229B78E5F28E /* Pods-car4u.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-car4u.release.xcconfig"; path = "Target Support Files/Pods-car4u/Pods-car4u.release.xcconfig"; sourceTree = "<group>"; };
+		5919A186BC4DD9135FFCFAB3 /* Pods-car4uTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-car4uTests.release.xcconfig"; path = "Target Support Files/Pods-car4uTests/Pods-car4uTests.release.xcconfig"; sourceTree = "<group>"; };
 		848D7F4B2335F55800BEE34F /* car4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = car4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		848D7F682335FAB500BEE34F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		848D7F682335FAB500BEE34F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		848D7F6B2335FAB500BEE34F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		848D7F6C2335FAB500BEE34F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		848D7F6F2335FAB500BEE34F /* car4u.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = car4u.xcdatamodel; sourceTree = "<group>"; };
 		848D7F702335FAB500BEE34F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848D7F722335FAB500BEE34F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848D7F732335FAB500BEE34F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848D7F7B2336010800BEE34F /* LocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProvider.swift; sourceTree = "<group>"; };
+		848D7F7E2336043600BEE34F /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		848D7F802336051800BEE34F /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		848D7F822336072700BEE34F /* ApiManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiManager+Rx.swift"; sourceTree = "<group>"; };
+		848D7F8423360C0700BEE34F /* Placemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placemark.swift; sourceTree = "<group>"; };
+		848D7F8723360EA500BEE34F /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		848D7F892336129C00BEE34F /* PlacemarkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkServices.swift; sourceTree = "<group>"; };
+		848D7F8C2336233900BEE34F /* PlacemarksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarksViewModel.swift; sourceTree = "<group>"; };
+		848D7F8E2336291700BEE34F /* ObservableType+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Extensions.swift"; sourceTree = "<group>"; };
+		848D7F902336552900BEE34F /* AnnotationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationViewModel.swift; sourceTree = "<group>"; };
+		848D7F93233665A700BEE34F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		848D7F95233666FF00BEE34F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		848D7F972336678A00BEE34F /* UIView+StateIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+StateIndicator.swift"; sourceTree = "<group>"; };
+		848D7F99233667DB00BEE34F /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		848D7F9C23366B1F00BEE34F /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		848D7F9F2336826E00BEE34F /* PulleyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulleyViewController.swift; sourceTree = "<group>"; };
+		848D7FA02336826E00BEE34F /* PulleyPassthroughScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulleyPassthroughScrollView.swift; sourceTree = "<group>"; };
+		848D7FA52336895800BEE34F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		848D7FA723368ACF00BEE34F /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		848D7FA923368EEF00BEE34F /* CarInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoViewModel.swift; sourceTree = "<group>"; };
+		848D7FAB233698AC00BEE34F /* CarInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoCell.swift; sourceTree = "<group>"; };
+		848D7FAC233698AC00BEE34F /* CarInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarInfoCell.xib; sourceTree = "<group>"; };
+		848D7FB12336CC2500BEE34F /* car4u.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = car4u.xcdatamodel; sourceTree = "<group>"; };
+		848D7FB32336CC5100BEE34F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		848D7FB72337EE3000BEE34F /* DataController+Insert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController+Insert.swift"; sourceTree = "<group>"; };
+		848D7FC42338B59400BEE34F /* DataController+Fetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController+Fetch.swift"; sourceTree = "<group>"; };
+		848D7FC62338BF5200BEE34F /* UIControl+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extensions.swift"; sourceTree = "<group>"; };
+		848D7FEA2338C7A300BEE34F /* car4uTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = car4uTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		848D7FF62338C7BD00BEE34F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848D7FF92338C9EC00BEE34F /* MapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerTests.swift; sourceTree = "<group>"; };
+		848D7FFD2338D41B00BEE34F /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		848D80012338DBA400BEE34F /* MockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewModel.swift; sourceTree = "<group>"; };
+		9A46DC80E6E715E83F2214B0 /* Pods-car4uTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-car4uTests.debug.xcconfig"; path = "Target Support Files/Pods-car4uTests/Pods-car4uTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B41410776D735EFC95AE8866 /* Pods_car4uTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_car4uTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF13842681121CAE062FE99 /* Pods_car4u.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_car4u.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -40,6 +113,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		848D7FE72338C7A300BEE34F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74371F4819C191F441524D18 /* Pods_car4uTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -47,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				CFF13842681121CAE062FE99 /* Pods_car4u.framework */,
+				B41410776D735EFC95AE8866 /* Pods_car4uTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -55,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				848D7F4D2335F55800BEE34F /* car4u */,
+				848D7FEB2338C7A300BEE34F /* car4uTests */,
 				848D7F4C2335F55800BEE34F /* Products */,
 				D0EB3E18E9251C9827E727AD /* Pods */,
 				5C3F6C51BE9929D36D2031AA /* Frameworks */,
@@ -65,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				848D7F4B2335F55800BEE34F /* car4u.app */,
+				848D7FEA2338C7A300BEE34F /* car4uTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +158,7 @@
 			children = (
 				848D7F712335FAB500BEE34F /* Application */,
 				848D7F662335FAB500BEE34F /* CustomViews */,
+				848D7FAF2336CBEF00BEE34F /* DataController */,
 				848D7F642335FAB500BEE34F /* Extensions */,
 				848D7F632335FAB500BEE34F /* Models */,
 				848D7F692335FAB500BEE34F /* Resources */,
@@ -86,6 +171,7 @@
 		848D7F632335FAB500BEE34F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				848D7F8423360C0700BEE34F /* Placemark.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -93,6 +179,8 @@
 		848D7F642335FAB500BEE34F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				848D7F922336658500BEE34F /* UIKit */,
+				848D7F8623360E9700BEE34F /* Foundation */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -100,6 +188,9 @@
 		848D7F652335FAB500BEE34F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				848D7F7D2336041400BEE34F /* Base */,
+				848D7F7B2336010800BEE34F /* LocationProvider.swift */,
+				848D7F892336129C00BEE34F /* PlacemarkServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -107,6 +198,7 @@
 		848D7F662335FAB500BEE34F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				848D7F9E2336824200BEE34F /* PulleyController */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -114,7 +206,10 @@
 		848D7F672335FAB500BEE34F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				848D7F682335FAB500BEE34F /* ViewController.swift */,
+				848D7F9B23366B0400BEE34F /* View */,
+				848D7F8B23361FFF00BEE34F /* ViewModel */,
+				848D7F682335FAB500BEE34F /* MapViewController.swift */,
+				848D7FA52336895800BEE34F /* ListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -123,7 +218,6 @@
 			isa = PBXGroup;
 			children = (
 				848D7F6A2335FAB500BEE34F /* Storyboards */,
-				848D7F6D2335FAB500BEE34F /* Database */,
 				848D7F702335FAB500BEE34F /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -138,14 +232,6 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		848D7F6D2335FAB500BEE34F /* Database */ = {
-			isa = PBXGroup;
-			children = (
-				848D7F6E2335FAB500BEE34F /* car4u.xcdatamodeld */,
-			);
-			path = Database;
-			sourceTree = "<group>";
-		};
 		848D7F712335FAB500BEE34F /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,11 +241,96 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		848D7F7D2336041400BEE34F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				848D7F7E2336043600BEE34F /* Api.swift */,
+				848D7F802336051800BEE34F /* ApiManager.swift */,
+				848D7F822336072700BEE34F /* ApiManager+Rx.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		848D7F8623360E9700BEE34F /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				848D7F8723360EA500BEE34F /* Dictionary+Extensions.swift */,
+				848D7F8E2336291700BEE34F /* ObservableType+Extensions.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		848D7F8B23361FFF00BEE34F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				848D7F902336552900BEE34F /* AnnotationViewModel.swift */,
+				848D7FA923368EEF00BEE34F /* CarInfoViewModel.swift */,
+				848D7F8C2336233900BEE34F /* PlacemarksViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		848D7F922336658500BEE34F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				848D7F93233665A700BEE34F /* UIColor+Extensions.swift */,
+				848D7F95233666FF00BEE34F /* UIView+Extensions.swift */,
+				848D7F972336678A00BEE34F /* UIView+StateIndicator.swift */,
+				848D7F99233667DB00BEE34F /* UIView+AutoLayout.swift */,
+				848D7FA723368ACF00BEE34F /* UIViewController+Extensions.swift */,
+				848D7FC62338BF5200BEE34F /* UIControl+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		848D7F9B23366B0400BEE34F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				848D7F9C23366B1F00BEE34F /* AnnotationView.swift */,
+				848D7FAB233698AC00BEE34F /* CarInfoCell.swift */,
+				848D7FAC233698AC00BEE34F /* CarInfoCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		848D7F9E2336824200BEE34F /* PulleyController */ = {
+			isa = PBXGroup;
+			children = (
+				848D7FA02336826E00BEE34F /* PulleyPassthroughScrollView.swift */,
+				848D7F9F2336826E00BEE34F /* PulleyViewController.swift */,
+			);
+			path = PulleyController;
+			sourceTree = "<group>";
+		};
+		848D7FAF2336CBEF00BEE34F /* DataController */ = {
+			isa = PBXGroup;
+			children = (
+				848D7FB02336CC2500BEE34F /* car4u.xcdatamodeld */,
+				848D7FB32336CC5100BEE34F /* DataController.swift */,
+				848D7FB72337EE3000BEE34F /* DataController+Insert.swift */,
+				848D7FC42338B59400BEE34F /* DataController+Fetch.swift */,
+			);
+			path = DataController;
+			sourceTree = "<group>";
+		};
+		848D7FEB2338C7A300BEE34F /* car4uTests */ = {
+			isa = PBXGroup;
+			children = (
+				848D7FFD2338D41B00BEE34F /* locations.json */,
+				848D7FF62338C7BD00BEE34F /* Info.plist */,
+				848D80012338DBA400BEE34F /* MockViewModel.swift */,
+				848D7FF92338C9EC00BEE34F /* MapViewControllerTests.swift */,
+			);
+			path = car4uTests;
+			sourceTree = "<group>";
+		};
 		D0EB3E18E9251C9827E727AD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				1677C46D592004C2D4F55B97 /* Pods-car4u.debug.xcconfig */,
 				587ED69B661C229B78E5F28E /* Pods-car4u.release.xcconfig */,
+				9A46DC80E6E715E83F2214B0 /* Pods-car4uTests.debug.xcconfig */,
+				5919A186BC4DD9135FFCFAB3 /* Pods-car4uTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -186,6 +357,26 @@
 			productReference = 848D7F4B2335F55800BEE34F /* car4u.app */;
 			productType = "com.apple.product-type.application";
 		};
+		848D7FE92338C7A300BEE34F /* car4uTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848D7FF12338C7A300BEE34F /* Build configuration list for PBXNativeTarget "car4uTests" */;
+			buildPhases = (
+				DF28F30E1D9C81C5040CDAD1 /* [CP] Check Pods Manifest.lock */,
+				848D7FE62338C7A300BEE34F /* Sources */,
+				848D7FE72338C7A300BEE34F /* Frameworks */,
+				848D7FE82338C7A300BEE34F /* Resources */,
+				2880EE59ECED8B4D0C629D8C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				848D7FF02338C7A300BEE34F /* PBXTargetDependency */,
+			);
+			name = car4uTests;
+			productName = car4uTests;
+			productReference = 848D7FEA2338C7A300BEE34F /* car4uTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,6 +389,10 @@
 				TargetAttributes = {
 					848D7F4A2335F55800BEE34F = {
 						CreatedOnToolsVersion = 10.3;
+					};
+					848D7FE92338C7A300BEE34F = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 848D7F4A2335F55800BEE34F;
 					};
 				};
 			};
@@ -215,6 +410,7 @@
 			projectRoot = "";
 			targets = (
 				848D7F4A2335F55800BEE34F /* car4u */,
+				848D7FE92338C7A300BEE34F /* car4uTests */,
 			);
 		};
 /* End PBXProject section */
@@ -224,10 +420,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848D7F7A2335FAB500BEE34F /* Info.plist in Resources */,
 				848D7F752335FAB500BEE34F /* LaunchScreen.storyboard in Resources */,
 				848D7F782335FAB500BEE34F /* Assets.xcassets in Resources */,
+				848D7FAE233698AC00BEE34F /* CarInfoCell.xib in Resources */,
 				848D7F762335FAB500BEE34F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848D7FE82338C7A300BEE34F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848D7FFE2338D41C00BEE34F /* locations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +453,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-car4u/Pods-car4u-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2880EE59ECED8B4D0C629D8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-car4uTests/Pods-car4uTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-car4uTests/Pods-car4uTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-car4uTests/Pods-car4uTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF28F30E1D9C81C5040CDAD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-car4uTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ECD8ABAF364055D58D069D63 /* [CP] Check Pods Manifest.lock */ = {
@@ -280,13 +523,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848D7FAA23368EEF00BEE34F /* CarInfoViewModel.swift in Sources */,
 				848D7F792335FAB500BEE34F /* AppDelegate.swift in Sources */,
-				848D7F742335FAB500BEE34F /* ViewController.swift in Sources */,
-				848D7F772335FAB500BEE34F /* car4u.xcdatamodeld in Sources */,
+				848D7F9D23366B1F00BEE34F /* AnnotationView.swift in Sources */,
+				848D7F9A233667DB00BEE34F /* UIView+AutoLayout.swift in Sources */,
+				848D7FC52338B59400BEE34F /* DataController+Fetch.swift in Sources */,
+				848D7F832336072700BEE34F /* ApiManager+Rx.swift in Sources */,
+				848D7F912336552900BEE34F /* AnnotationViewModel.swift in Sources */,
+				848D7F8823360EA500BEE34F /* Dictionary+Extensions.swift in Sources */,
+				848D7FA823368ACF00BEE34F /* UIViewController+Extensions.swift in Sources */,
+				848D7F8523360C0700BEE34F /* Placemark.swift in Sources */,
+				848D7FB22336CC2500BEE34F /* car4u.xcdatamodeld in Sources */,
+				848D7FB42336CC5100BEE34F /* DataController.swift in Sources */,
+				848D7F7C2336010800BEE34F /* LocationProvider.swift in Sources */,
+				848D7F742335FAB500BEE34F /* MapViewController.swift in Sources */,
+				848D7F8D2336233900BEE34F /* PlacemarksViewModel.swift in Sources */,
+				848D7FB82337EE3000BEE34F /* DataController+Insert.swift in Sources */,
+				848D7F982336678A00BEE34F /* UIView+StateIndicator.swift in Sources */,
+				848D7F7F2336043600BEE34F /* Api.swift in Sources */,
+				848D7F8F2336291700BEE34F /* ObservableType+Extensions.swift in Sources */,
+				848D7FC72338BF5200BEE34F /* UIControl+Extensions.swift in Sources */,
+				848D7FA12336826E00BEE34F /* PulleyViewController.swift in Sources */,
+				848D7F812336051800BEE34F /* ApiManager.swift in Sources */,
+				848D7FA22336826E00BEE34F /* PulleyPassthroughScrollView.swift in Sources */,
+				848D7F94233665A700BEE34F /* UIColor+Extensions.swift in Sources */,
+				848D7F96233666FF00BEE34F /* UIView+Extensions.swift in Sources */,
+				848D7F8A2336129C00BEE34F /* PlacemarkServices.swift in Sources */,
+				848D7FAD233698AC00BEE34F /* CarInfoCell.swift in Sources */,
+				848D7FA62336895800BEE34F /* ListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848D7FE62338C7A300BEE34F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848D80022338DBA400BEE34F /* MockViewModel.swift in Sources */,
+				848D7FFA2338C9EC00BEE34F /* MapViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		848D7FF02338C7A300BEE34F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 848D7F4A2335F55800BEE34F /* car4u */;
+			targetProxy = 848D7FEF2338C7A300BEE34F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		848D7F5E2335F55900BEE34F /* Debug */ = {
@@ -340,7 +625,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -395,7 +680,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -411,15 +696,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = car4u/Info.plist;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/car4u/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Hardik-Kothari.car4u";
+				PRODUCT_BUNDLE_IDENTIFIER = com.car4u;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -429,15 +716,63 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = car4u/Info.plist;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/car4u/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Hardik-Kothari.car4u";
+				PRODUCT_BUNDLE_IDENTIFIER = com.car4u;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		848D7FF22338C7A300BEE34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A46DC80E6E715E83F2214B0 /* Pods-car4uTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = car4uTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hardik-Kothari.car4uTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/car4u.app/car4u";
+			};
+			name = Debug;
+		};
+		848D7FF32338C7A300BEE34F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919A186BC4DD9135FFCFAB3 /* Pods-car4uTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = car4uTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hardik-Kothari.car4uTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/car4u.app/car4u";
 			};
 			name = Release;
 		};
@@ -462,15 +797,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		848D7FF12338C7A300BEE34F /* Build configuration list for PBXNativeTarget "car4uTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848D7FF22338C7A300BEE34F /* Debug */,
+				848D7FF32338C7A300BEE34F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		848D7F6E2335FAB500BEE34F /* car4u.xcdatamodeld */ = {
+		848D7FB02336CC2500BEE34F /* car4u.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				848D7F6F2335FAB500BEE34F /* car4u.xcdatamodel */,
+				848D7FB12336CC2500BEE34F /* car4u.xcdatamodel */,
 			);
-			currentVersion = 848D7F6F2335FAB500BEE34F /* car4u.xcdatamodel */;
+			currentVersion = 848D7FB12336CC2500BEE34F /* car4u.xcdatamodel */;
 			path = car4u.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

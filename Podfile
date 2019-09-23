@@ -1,12 +1,15 @@
+# Uncomment the next line to define a global platform for your project
 platform :ios, '11.0'
 
-use_frameworks!
-
-def shared
+target 'car4u' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  
   pod 'Alamofire'
   pod 'RxSwift'
-end
 
-target 'car4u' do
-  shared
+  target 'car4uTests' do
+    inherit! :search_paths
+    pod 'RxNimble'
+  end
 end
