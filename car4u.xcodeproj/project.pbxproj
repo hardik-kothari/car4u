@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		74371F4819C191F441524D18 /* Pods_car4uTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41410776D735EFC95AE8866 /* Pods_car4uTests.framework */; };
+		847535F523390C9C001D7217 /* MockPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847535F423390C9C001D7217 /* MockPlacemark.swift */; };
+		847535F723390D71001D7217 /* MockPlacemarkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847535F623390D71001D7217 /* MockPlacemarkServices.swift */; };
+		847535F923393681001D7217 /* PlacemarksViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847535F823393681001D7217 /* PlacemarksViewModelTests.swift */; };
 		848D7F742335FAB500BEE34F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7F682335FAB500BEE34F /* MapViewController.swift */; };
 		848D7F752335FAB500BEE34F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D7F6B2335FAB500BEE34F /* LaunchScreen.storyboard */; };
 		848D7F762335FAB500BEE34F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D7F6C2335FAB500BEE34F /* Main.storyboard */; };
@@ -40,9 +43,7 @@
 		848D7FB82337EE3000BEE34F /* DataController+Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FB72337EE3000BEE34F /* DataController+Insert.swift */; };
 		848D7FC52338B59400BEE34F /* DataController+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FC42338B59400BEE34F /* DataController+Fetch.swift */; };
 		848D7FC72338BF5200BEE34F /* UIControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FC62338BF5200BEE34F /* UIControl+Extensions.swift */; };
-		848D7FFA2338C9EC00BEE34F /* MapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D7FF92338C9EC00BEE34F /* MapViewControllerTests.swift */; };
 		848D7FFE2338D41C00BEE34F /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 848D7FFD2338D41B00BEE34F /* locations.json */; };
-		848D80022338DBA400BEE34F /* MockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D80012338DBA400BEE34F /* MockViewModel.swift */; };
 		89CB766BE85B4D782B3FF96D /* Pods_car4u.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF13842681121CAE062FE99 /* Pods_car4u.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,9 @@
 		1677C46D592004C2D4F55B97 /* Pods-car4u.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-car4u.debug.xcconfig"; path = "Target Support Files/Pods-car4u/Pods-car4u.debug.xcconfig"; sourceTree = "<group>"; };
 		587ED69B661C229B78E5F28E /* Pods-car4u.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-car4u.release.xcconfig"; path = "Target Support Files/Pods-car4u/Pods-car4u.release.xcconfig"; sourceTree = "<group>"; };
 		5919A186BC4DD9135FFCFAB3 /* Pods-car4uTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-car4uTests.release.xcconfig"; path = "Target Support Files/Pods-car4uTests/Pods-car4uTests.release.xcconfig"; sourceTree = "<group>"; };
+		847535F423390C9C001D7217 /* MockPlacemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlacemark.swift; sourceTree = "<group>"; };
+		847535F623390D71001D7217 /* MockPlacemarkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlacemarkServices.swift; sourceTree = "<group>"; };
+		847535F823393681001D7217 /* PlacemarksViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarksViewModelTests.swift; sourceTree = "<group>"; };
 		848D7F4B2335F55800BEE34F /* car4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = car4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848D7F682335FAB500BEE34F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		848D7F6B2335FAB500BEE34F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,9 +100,7 @@
 		848D7FC62338BF5200BEE34F /* UIControl+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extensions.swift"; sourceTree = "<group>"; };
 		848D7FEA2338C7A300BEE34F /* car4uTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = car4uTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848D7FF62338C7BD00BEE34F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		848D7FF92338C9EC00BEE34F /* MapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerTests.swift; sourceTree = "<group>"; };
 		848D7FFD2338D41B00BEE34F /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
-		848D80012338DBA400BEE34F /* MockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewModel.swift; sourceTree = "<group>"; };
 		9A46DC80E6E715E83F2214B0 /* Pods-car4uTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-car4uTests.debug.xcconfig"; path = "Target Support Files/Pods-car4uTests/Pods-car4uTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B41410776D735EFC95AE8866 /* Pods_car4uTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_car4uTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF13842681121CAE062FE99 /* Pods_car4u.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_car4u.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -318,8 +320,9 @@
 			children = (
 				848D7FFD2338D41B00BEE34F /* locations.json */,
 				848D7FF62338C7BD00BEE34F /* Info.plist */,
-				848D80012338DBA400BEE34F /* MockViewModel.swift */,
-				848D7FF92338C9EC00BEE34F /* MapViewControllerTests.swift */,
+				847535F423390C9C001D7217 /* MockPlacemark.swift */,
+				847535F623390D71001D7217 /* MockPlacemarkServices.swift */,
+				847535F823393681001D7217 /* PlacemarksViewModelTests.swift */,
 			);
 			path = car4uTests;
 			sourceTree = "<group>";
@@ -558,8 +561,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848D80022338DBA400BEE34F /* MockViewModel.swift in Sources */,
-				848D7FFA2338C9EC00BEE34F /* MapViewControllerTests.swift in Sources */,
+				847535F523390C9C001D7217 /* MockPlacemark.swift in Sources */,
+				847535F723390D71001D7217 /* MockPlacemarkServices.swift in Sources */,
+				847535F923393681001D7217 /* PlacemarksViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,9 @@
 import Foundation
 import RxSwift
 
-extension ApiManager {
+class PlacemarkServices {
     func getPlacemarks() -> Observable<[Placemark]> {
-        return self
+        return ApiManager.shared
             .rx
             .request(Api.placemarks)
             .mapJson()

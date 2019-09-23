@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setInitialController() {
-        let viewModel = PlacemarksViewModel()
+        let viewModel = PlacemarksViewModel(service: PlacemarkServices())
         let primaryController = MapViewController.storyboardInstance(viewModel)
         let drawerViewController = ListViewController.storyboardInstance(viewModel)
         let pullyController = PulleyViewController(contentViewController: primaryController, drawerViewController: drawerViewController)

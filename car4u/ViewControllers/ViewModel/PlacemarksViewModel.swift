@@ -9,8 +9,9 @@
 import UIKit
 import RxSwift
 
-class PlacemarksViewModel: NSObject {
+class PlacemarksViewModel {
     // MARK: - Private properties
+    private var service: PlacemarkServices!
     private var carList: [CarInfoViewModel] = []
     private let disposeBag = DisposeBag()
     
@@ -19,8 +20,8 @@ class PlacemarksViewModel: NSObject {
     let carInfoSubject = BehaviorSubject<[CarInfoViewModel]>(value: [])
     
     // MARK: - Life-cycle methods
-    override init() {
-        super.init()
+    init(service: PlacemarkServices) {
+        self.service = service
         bindWithDataProvider()
     }
     
@@ -52,7 +53,7 @@ extension PlacemarksViewModel {
     @objc func getPlacemarks() {
         if ApiManager.shared.isConnectedToInternet {
             annotationsSubject.onNext((.loading))
-            ApiManager.shared.getPlacemarks()
+            service.getPlacemarks()
                 .observeOn(MainScheduler.instance)
                 .subscribe (
                     onNext: { [weak self] placemarks in
